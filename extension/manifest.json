@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SyncStream Pro",
+  "version": "2.0",
+  "description": "Sync video playback via Rooms",
+  "permissions": ["activeTab", "scripting", "storage"],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}

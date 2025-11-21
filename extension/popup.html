@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css"> <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SYNCSTREAM</h1>
+            <div id="indicator" class="live-indicator disconnected"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="roomId">ROOM NAME</label>
+            <input type="text" id="roomId" placeholder="ex: anime_night">
+        </div>
+
+        <button id="actionBtn" class="btn-connect">CONNECT</button>
+        
+        <p id="status" class="status">Ready to connect</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
