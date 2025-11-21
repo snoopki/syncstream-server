@@ -78,7 +78,7 @@ function connectToWebSocket(roomId) {
         ws.close();
     }
 
-    ws = new WebSocket(`ws://localhost:8000/ws/${roomId}`);
+    ws = new WebSocket(`wss://jaylen-skilful-curmudgeonly.ngrok-free.dev/ws/${roomId}`);
 
     ws.onopen = () => {
         console.log(`Connected to ${roomId}`);
